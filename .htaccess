@@ -1,0 +1,31 @@
+RewriteEngine On
+RewriteBase /
+
+# Protege archivos sensibles
+<FilesMatch "^(\.env|\.git|\.htaccess|composer\.(json|lock)|package(-lock)?\.json|yarn\.lock|webpack\.config\.js|\.DS_Store|\.vscode|\.idea|\.babelrc|\.editorconfig)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+RedirectMatch 403 /\..*$
+
+<FilesMatch "\.(bak|log|sql|swp|old|orig|tmp|save|gz|zip)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Redirige todas las peticiones a /public excepto si ya están en /public
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+# Opcionalmente, si quieres especificar PHP handler:
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

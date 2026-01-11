@@ -1,0 +1,1 @@
+import{D as r,ba as e}from"./chunk-5G623SOG.js";var n=class t{_notificarEvento=new e;constructor(){}get notificarEvento(){return this._notificarEvento}static \u0275fac=function(i){return new(i||t)};static \u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"})};var o=class{origen;archivo;archivo2;retorno};export{n as a,o as b};
