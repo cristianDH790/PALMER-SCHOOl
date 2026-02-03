@@ -15,7 +15,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<p><a href="<?= base_url(); ?>">Inicio</a><span>></span><a href="<?= base_url(); ?>"> Blog</a><span>></span>La tecnologia escolar</p>
+				<p><a href="<?= base_url(); ?>">Inicio</a><span>></span><a href="<?= base_url(); ?>blogs"> Blog</a><span>></span>La tecnologia escolar</p>
 			</div>
 		</div>
 	</div>

@@ -53,6 +53,7 @@ abstract class BaseController extends Controller
         $data["correo"] = $configuracion->obtenerPorId(2);
         $data["cubicol"] = $configuracion->obtenerPorId(3);
         $data["telefono"] = $configuracion->obtenerPorId(4);
+        $data["telefono2"] = $configuracion->obtenerPorId(45);
         $data["direccion"] = $configuracion->obtenerPorId(1);
         $data["facebook"] = $configuracion->obtenerPorId(40);
         $data["tiktok"] = $configuracion->obtenerPorId(39);

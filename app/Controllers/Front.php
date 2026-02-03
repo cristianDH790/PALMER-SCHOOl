@@ -54,9 +54,11 @@ class Front extends BaseController
         $data["bannerinicio"] = $this->contenidoweb->obtenerPorId(4);
         $data["nivelesinicios"] = $this->niveles->buscarPor("orden", "asc", "", "", 414, 583, 0, 3);
         $data["tipopagos"] = $this->contenidoweb->obtenerPorId(6);
-
+        $data["publicidad"] = $this->configuracion->obtenerPorId(44);
+        $data["urlpublicidad"] = $this->configuracion->obtenerPorId(46);
         $data['sliders'] = $this->slider->buscarPor("orden", "asc", "", "", 304, 0, 0, 0, 0);
-        // var_dump($data['sliders']);
+        // var_dump($data['publicidad']);
+        // die();
         $this->front_views('front/body/inicio', $data);
     }
     public function nosotros()
@@ -117,7 +119,7 @@ class Front extends BaseController
             $data["blog"] = $this->blog->obtenerPorUrlAmigable($url);
             $data["blogcategoria"] = $this->noticiaCategoria->obtenerPorId($data["blog"]->idnoticiacategoria);
             $data["blogrelacionadas"] = $this->blog->buscarPor("orden", "asc", "", "", 412,  $data["blog"]->idnoticiacategoria, 581, 0, 0);
-           
+            
             $this->front_views('front/body/blogDetalle', $data);
         }
     }
@@ -133,6 +135,7 @@ class Front extends BaseController
         $data["titulo"] = "Palmer School - Niveles";
         $data["url"] = "";
         $data["nivelesinicios"] = $this->niveles->buscarPor("orden", "asc", "", "", 414, 583, 0, 3);
+
         $this->front_views('front/body/niveles', $data);
     }
     public function nivelDetalle($url = "")
@@ -149,6 +152,8 @@ class Front extends BaseController
             $data["titulo"] = "Palmer School - Niveles";
             $data["url"] = "";
             $data["nivel"] = $this->niveles->obtenerPorUrlAmigable($url);
+            $data["tipopagos"] = $this->contenidoweb->obtenerPorId(6);
+            $data["bannerinicio"] = $this->contenidoweb->obtenerPorId(4);
             $this->front_views('front/body/nivelDetalle', $data);
         }
     }

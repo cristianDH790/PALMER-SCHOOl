@@ -45,8 +45,11 @@
 				<div class="empresa2">
 					<h4>Palmer school</h4>
 					<ul>
+
 						<li><a target="_blank" href="mailto:<?= $correo->valor ?>"><?= $correo->valor ?></a></li>
-						<li><a target="_blank" href="https//wa.me/<?= $telefono->valor ?>">+ <?= $telefono->valor ?></a></li>
+						<li><a target="_blank" href="https://wa.me/<?= preg_replace('/\D/', '', $telefono->valor) ?>">+ <?= $telefono->valor ?></a></li>
+						<li><a target="_blank" href="https://wa.me/<?= preg_replace('/\D/', '', $telefono2->valor) ?>">+ <?= $telefono2->valor ?></a></li>
+
 						<li><a target="_blank" href="https://www.google.com/maps/place/<?= $direccion->valor ?>"><?= $direccion->valor ?></a></li>
 					</ul>
 				</div>
@@ -62,7 +65,7 @@
 				<p>
 					<a href="<?= getenv('ADMIN_SITE') ?>" target="_blank">
 						<i class="fa-solid fa-cog"></i></a>
-					© PALMER SCHOOL 2026. Todos los derechos reservados | Desarrollado por <a href="https://github.com/cristianDH790">CRISTIAN DH</a>
+					© PALMER SCHOOL 2026. Todos los derechos reservados</a>
 				</p>
 			</div>
 		</div>
@@ -90,13 +93,17 @@
 <script>
 	AOS.init({
 		duration: 1000,
-		once: true
+		once: false
 	});
+
 
 	window.addEventListener("scroll", function() {
 		var nav = document.querySelector("nav");
 		nav.classList.toggle("abajo", window.scrollY > 0);
 	})
+	document.querySelectorAll('[contenteditable]').forEach(el => {
+		el.removeAttribute('contenteditable');
+	});
 </script>
 </body>
 

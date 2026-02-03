@@ -29,7 +29,7 @@ header{position: relative;display: block;padding:10px 0px;z-index: 9;}
 .bg-body-tertiary {--bs-bg-opacity: 1;background-color: #fff !important;}
 .barra-logo::after {width: 0px;height: 100px;border-left: 78px solid #000;border-right: 78px solid #000;border-bottom: 35px solid transparent;position: absolute;content: '';top: -50px;transform: rotate(-90deg);left: 16.4%;opacity: .2;filter: blur(1px);}
 .navbar-brand{padding: 0; margin-top: 5px; margin-bottom: 5px; margin-left: 20px;}
-.navbar-brand img{width: 110px;}
+.navbar-brand img{width: 90px !important;}
 .navbar li {position: relative;}
 .navbar li.dn{display: none;}
 
@@ -37,6 +37,7 @@ header{position: relative;display: block;padding:10px 0px;z-index: 9;}
   display:none!important;
   content: none !important;
 }
+
 
 
 
@@ -118,11 +119,11 @@ footer .d-flex h6{display: block;margin-right: 10px;margin-bottom: 0;}
 footer .d-flex ul{display: block;}
 footer .d-flex ul li{display: inline-block;}
 footer .d-flex ul li a{display: block;width: 40px;height: 40px;line-height: 40px;color: #fff;border: 1px solid #fff;text-align: center;border-radius: 50px;font-size: 18px;margin: 0 4px;}
-footer .d-flex ul li a:hover{background: #fff;color: #e64a0e;}
+footer .d-flex ul li a:hover{background: #fff;color: #42ad22;}
 
 footer h4{display: block;color: #fff;margin-bottom: 15px;font-size: 18px;font-weight: 600; text-transform: uppercase;}
 footer h6{margin-bottom: 30px;color: #fff;}
-footer img{display: block;width: 48%;margin: 0 auto; padding-bottom: 15px;}
+footer img{display: block;width: 44%;margin: 0 auto; padding-bottom: 15px;}
 footer .redes{display: block;position: relative;text-align: left;}
 footer .redes li{display: inline-block;margin-bottom: 7px;}
 footer .redes li a{padding: 0;width: 30px;height: 30px;text-align: center;color: #fff;display: block;margin: 0 5px;}
@@ -172,7 +173,7 @@ footer .boletin .form-control:focus {
 
 footer .boletin button {
     background: #fff;
-    color: #e64a0e;
+    color: #42ad22;
     border: 1px solid #fff !important;padding: 5px 25px;
 }
 
@@ -285,12 +286,12 @@ footer .boletin button:hover {
 .contactenos .box-contacto{position: relative;display: block;width: 100%;border-radius: 20px;padding: 30px;background: #eaf2f2;}
 .contactenos .box-contacto ul{margin-bottom: 30px;}
 .contactenos .box-contacto ul li{position: relative;padding-left: 40px;margin-bottom: 10px;}
-.contactenos .box-contacto ul .wsp::before {position: absolute;content: '\f232';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #e64a0e;font-size: 18px;}
-.contactenos .box-contacto ul .msj::before {position: absolute;content: '\f0e0';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #e64a0e;font-size: 18px;}
-.contactenos .box-contacto ul .ubi::before {position: absolute;content: '\f0e0';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #e64a0e;font-size: 18px;}
+.contactenos .box-contacto ul .wsp::before {position: absolute;content: '\f232';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #42ad22;font-size: 18px;}
+.contactenos .box-contacto ul .msj::before {position: absolute;content: '\f0e0';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #42ad22;font-size: 18px;}
+.contactenos .box-contacto ul .ubi::before {position: absolute;content: '\f0e0';left: 10px;width: 12px;height: 12px;top: 0px;font-family: 'FontAwesome';color: #42ad22;font-size: 18px;}
 .contactenos .box-contacto h4{display: block;color: #094886;font-weight: 600;margin-bottom: 20px;position: relative;font-size: 20px;text-align: left;text-transform: uppercase;}
 .contactenos .box-contacto .redes-contacto li{display: inline-block;vertical-align: text-top;padding-left: 0;}
-.contactenos .box-contacto .redes-contacto li a{color: #094886;font-weight: 600;margin: 0 4px;font-size: 16px;width: 30px;display: block;text-align: center;border: 1px solid #e64a0e;border-radius: 50px;height: 30px;line-height: 30px;background: transparent;}
+.contactenos .box-contacto .redes-contacto li a{color: #094886;font-weight: 600;margin: 0 4px;font-size: 16px;width: 30px;display: block;text-align: center;border: 1px solid #42ad22;border-radius: 50px;height: 30px;line-height: 30px;background: transparent;}
 .contactenos .box-contacto .redes-contacto li a:hover{color: #fff;background: #094886;}
 .contactenos iframe{border-radius: 10px;display: block;margin-top: 0px;}
 .contactenos .mapaaa{display: block;width: 49%;margin-left: 2%;}
@@ -345,7 +346,7 @@ footer .boletin button:hover {
 .nivel{ padding:  50px; background: #edf2f2; border: none;}
 .nivel .card{  border: none;}
 .nivel .caja{  padding-bottom:  40px;}
-
+.nivel .img-fluid{ max-width: 75% !important;}
 .nivel .card-body{ padding:25px;}
 .nivel .card-body h3{ color: #032950; font-weight: 600 ; text-transform: uppercase;}
 .nivel .card-body a{ text-align: center; display: block;width: 200px;background: #fff;color: #42ad22;border: 1px solid #42ad22;margin: 20px auto 0;padding: 10px;font-weight: 600;border-radius: 50px;}
@@ -362,7 +363,7 @@ footer .boletin button:hover {
 .nivel-detalle  h3{font-weight: 600; color: #094886; text-transform: uppercase; padding-bottom:  20px;}
 .nivel-detalle .texto h3{font-weight: 600; color: #094886; text-transform: uppercase;}
 .nivel-detalle .texto a{ padding: 10px 15px;  font-weight: 500; color: #ffffff; background: #42ad22; border-radius: 25px;}
-.nivel-detalle .texto p{padding: 18px 0 30px 0; text-align: justify;}
+.nivel-detalle .texto p{padding: 18px 0 30px 0; text-align: justify; color: #363636 !important;}
 .nivel-detalle {background: #fff;padding: 50px 0;position: relative;}
 .nivel-detalle h2{display: block;text-align: left;margin-bottom: 15px;color: #094886;font-size: 40px;}
 .nivel-detalle h6.cate {display: inline-block;padding: 5px 25px;border-radius: 50px;margin-bottom: 7px;color: #42ad22;border: 1px solid #42ad22;background: #fff;}
@@ -413,3 +414,92 @@ footer .boletin button:hover {
   background-image: white;
   transform: var(--bs-accordion-btn-icon-transform);
 }
+
+
+
+
+/* NUEVO */
+/* ===== Estilos generales del navbar ===== */
+.navbar-nav .nav-item{
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+.navbar-nav .nav-link {
+    color: #333; /* color de texto normal */
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* ===== Hover y activo ===== */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff !important; /* fuerza el color blanco */
+    background-color: #094886 !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* ===== Dropdown (submenus) ===== */
+.navbar-nav .dropdown-menu {
+    background-color: #f8f9fa !important;
+    border-radius: 8px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+}
+
+/* Mostrar submenu al hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* ===== Items del dropdown ===== */
+.navbar-nav .dropdown-menu .dropdown-item {
+    padding: 8px 20px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Hover en items del dropdown */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #094886 !important;
+    color: #fff !important; /* fuerza el blanco */
+    border-radius: 5px;
+}
+
+/* ===== Flecha del dropdown ===== */
+.navbar-nav .dropdown-toggle::after {
+    margin-left: 0.3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Girar flecha al hover */
+.navbar-nav .dropdown:hover > .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* ===== Responsive (pantallas pequeñas) ===== */
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        position: static;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+/* NIVELES */
+.accordion-fullwidth {
+  background-color: #edf2f2 !important;
+  width: 100vw;          /* Ancho total de la ventana */
+  margin-left: calc(-50vw + 50%); /* Centrar quitando margen del contenedor padre */
+  padding: 2rem 1rem;    /* Opcional: agregar algo de padding interno */
+  box-sizing: border-box;
+}
+
+

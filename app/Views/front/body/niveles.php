@@ -75,7 +75,7 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-lg-3">
-                                    <img src="<?= base_url(); ?>archivos/nivel/<?= $nivelesinicio->urlimagen ?>" class="img-fluid rounded-start" alt="<?= $nivelesinicio->urlimagen ?>">
+                                    <img src="<?= base_url(); ?>archivos/nivel/<?= $nivelesinicio->urlimagen ?>" class="img-fluid rounded-start" alt="<?= $nivelesinicio->urlimagen ?>" style=" max-width: 92% !important;">
                                 </div>
                                 <div class="col-lg-9">
                                     <div class="card-body">
